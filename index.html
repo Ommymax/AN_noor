@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AN-YOF</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+            <h1 class="logo">
+                <img src="image/Screenshot_20240415-102409.png" width="90px" height="100px">
+            </h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#events">updates</a></li>
+                <li><a href="#">organization</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="ctn"><a href="login.html">logout</a></li>
+            </ul>
+        <img src="image/menu-btn.png" class="menu-btn">
+        </nav>
+        <header>
+            <div class="header-content">
+                
+                
+                <h1>AN NOOR YOUTH FOUNDATION</h1>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </header>
+
+        <!--Events-->
+        <section id="events">
+            <div class="title">
+                <h1>Updates</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="image/1713987523514.jpg"  width="500px"alt="">
+                    <h4>Mufti wa Tanzania apewa tuzo</h4>
+                    <p>Shekh ABoubakari zubeir apewa tunzo na rais wa misri kwa kusimamia vywema mashindano ya Qur-an.</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="col">
+                    <img src="image/1713986787299.jpg " width="550px" alt="">
+                    <h4>Korogwe yafanya semina</h4>
+                    <p>Shekh wilaya Korogwe awaluhusu vijana kufanya semina na waislam kuhus taasis ya An noor youth foundation.</p>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="explore" id="explore">
+            <div class="explore-content">
+                <h1>UKUMBUSHO</h1>
+                <dv class="line"></dv>
+                <P>Tumeletwa duniani kwa ajili ya kuumuadudu allah hivyo tunatakiwa waislamu wate kufanya aima katika kujipinda kwa allah</P>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </section>
+
+        <section class="tours" id="tours">
+            <div class="row">
+                <div class="col content-col">
+                    <h1>events</h1>
+                 
+                    <P>Taasisi ya vijana ya An noor yafungua rasmi wovuti yake kwa ajili ya kufikisha ujumbe kwa waislamu </P>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class=" imge-col">
+                    <div class="image-gallery">
+                        <img src="image/bayu-prayuda-4ZVqqDAZD2o-unsplash.jpg">
+                        <img src="image/ishan-seefromthesky-66Tu10CxYY0-unsplash.jpg" width="300px" height="250px">
+                        <img src="image/Screenshot_20240415-102409.png"height="250px">
+                        <img src="image/rachid-oucharia-2d1-OSHkHXM-unsplash.jpg" height="250px">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p>Copyright @ 2024 An noor youth organization</p>
+        </section>
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.nav-links')
+    
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+    </body>
+</html>

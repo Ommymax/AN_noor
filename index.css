@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.active {
+    color: orangered;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body ,html {
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li a{
+    margin: 0 30px;
+    color: white;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(image/PSX_20240425_093807.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+} 
+.line {
+    width: 150px;
+    height: 4px;
+    background: orangered;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn {
+    padding: 5px 10px ;
+    background: orangered;
+    border-radius: 30px;
+    color: whitesmoke;
+    padding-left: -100px;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.events .row {
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: rgb(81, 81, 136);
+    margin: 20px auto;
+}
+p {
+    color: rgb(83, 83, 126);
+    padding: 0px 40px;
+}
+.events .ctn {
+    margin-top: 30px;
+}
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/1713986685299.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content {
+    width: 50%;
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content .line{
+    margin-bottom: 50px;
+}
+.content-col h1 {
+    font-size: 6vmin;
+}
+.explore-content p {
+    font-size: 3vmin;
+}
+.explore-content p{
+    color: rgb(230, 220, 220);
+}
+.explore-content .ctn {
+    margin-top: 20px;
+}
+.content-col{
+    width: 60%;
+}
+.content-col .line{
+    margin-left: -1px;
+}
+.image-col{
+    width: 50%;
+}
+
+.tours .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img {
+    max-width: 250px;
+    margin: 10px;
+}
+.content-col h1{
+    font-size: 6vmin;
+    color: rgb(105, 105, 165);
+}
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+    font-size: 3vmin;
+}
+.content-col ctn{
+    margin-left: -100px;
+}
+.footer {
+    width: 100%;
+    padding: 20px 80px;
+    min-height: 100px;
+    background: rgb(105, 105, 165);
+    text-align: center;
+}
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+/* Events */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: blue;
+}
+/* Mobile device */
+@media only screen and (max-width:850px){
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(72, 72, 117);
+        margin-top: -800px;
+        transition: all 0.5s ease;
+        border-bottom-right-radius: 30%;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+    }
+    .nav-links li{
+        margin: 30px auto;
+        
+    }
+    /* Events */
+    .row{
+        flex-direction: column;
+    }
+    .row .col {
+        margin: 20px auto;
+    }
+    .col img {
+        max-width: 90%;
+    }
+    /* Explore */
+    .explore-content {
+        width: 100%;
+    }
+    .tours .col {
+        width: 100%;
+    }
+    .image-gallery {
+        justify-content: center;
+        align-items: center;
+    }
+    .image-gallery img {
+        width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+}
+
+/* Animations */
+img {
+    transition: transform .3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.ctn:hover {
+    background: whitesmoke;
+    color: orangered;
+    box-shadow: 2px 2px 5px black;
+}
+li:hover {
+    color: orangered;
+    cursor: pointer;
+}
